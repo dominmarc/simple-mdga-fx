@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mypane" prefHeight="790.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.ifdgmbh.mad.mdga.controller.MyController">
+   <children>
+      <AnchorPane fx:id="gamepane" layoutY="28.0" maxHeight="762.0" maxWidth="760.0" minHeight="762.0" minWidth="760.0" prefHeight="762.0" prefWidth="760.0">
+         <children>
+            <ImageView fx:id="myView" fitHeight="762.0" fitWidth="762.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/gamefield.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="rollButton" alignment="CENTER" layoutX="355.0" layoutY="356.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#rollButtonClick" prefHeight="50.0" prefWidth="50.0" text="GO">
+               <font>
+                  <Font name="Berlin Sans FB" size="27.0" />
+               </font>
+            </Button>
+            <Button layoutX="37.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="1" />
+            <Button layoutX="101.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="2" />
+            <Button layoutX="164.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="3" />
+            <Button layoutX="227.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="4" />
+            <Button layoutX="290.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="5" />
+            <Button layoutX="290.0" layoutY="227.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="6" />
+            <Button layoutX="290.0" layoutY="164.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="7" />
+            <Button layoutX="290.0" layoutY="101.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="8" />
+            <Button layoutX="290.0" layoutY="37.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="9" />
+            <Button layoutX="354.0" layoutY="37.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="10" />
+            <Button layoutX="417.0" layoutY="37.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="11" />
+            <Button layoutX="417.0" layoutY="101.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="12" />
+            <Button layoutX="417.0" layoutY="164.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="13" />
+            <Button layoutX="417.0" layoutY="227.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="14" />
+            <Button layoutX="417.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="15" />
+            <Button layoutX="480.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="16" />
+            <Button layoutX="544.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="17" />
+            <Button layoutX="607.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="18" />
+            <Button layoutX="670.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="19" />
+            <Button layoutX="670.0" layoutY="354.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="20" />
+            <Button layoutX="670.0" layoutY="416.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="21" />
+            <Button layoutX="607.0" layoutY="416.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="22" />
+            <Button layoutX="544.0" layoutY="416.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="23" />
+            <Button layoutX="480.0" layoutY="416.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="24" />
+            <Button layoutX="417.0" layoutY="416.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="25" />
+            <Button layoutX="417.0" layoutY="479.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="26" />
+            <Button layoutX="417.0" layoutY="543.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="27" />
+            <Button layoutX="417.0" layoutY="606.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="28" />
+            <Button layoutX="417.0" layoutY="670.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="29" />
+            <Button layoutX="354.0" layoutY="670.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="30" />
+            <Button layoutX="290.0" layoutY="670.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="31" />
+            <Button layoutX="290.0" layoutY="606.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="32" />
+            <Button layoutX="290.0" layoutY="543.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="33" />
+            <Button layoutX="290.0" layoutY="479.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="34" />
+            <Button layoutX="290.0" layoutY="416.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="35" />
+            <Button layoutX="227.0" layoutY="416.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="36" />
+            <Button layoutX="164.0" layoutY="416.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="37" />
+            <Button layoutX="101.0" layoutY="416.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="38" />
+            <Button layoutX="37.0" layoutY="416.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="39" />
+            <Button layoutX="37.0" layoutY="354.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="40" />
+            <Button layoutX="106.0" layoutY="358.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="41" />
+            <Button layoutX="169.0" layoutY="358.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="42" />
+            <Button layoutX="232.0" layoutY="358.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="43" />
+            <Button layoutX="295.0" layoutY="358.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="44" />
+            <Button layoutX="358.0" layoutY="106.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="45" />
+            <Button layoutX="358.0" layoutY="169.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="46" />
+            <Button layoutX="358.0" layoutY="232.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="47" />
+            <Button layoutX="358.0" layoutY="295.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="48" />
+            <Button layoutX="611.0" layoutY="358.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="49" />
+            <Button layoutX="548.0" layoutY="358.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="50" />
+            <Button layoutX="485.0" layoutY="358.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="51" />
+            <Button layoutX="422.0" layoutY="358.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="52" />
+            <Button layoutX="358.0" layoutY="611.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="53" />
+            <Button layoutX="358.0" layoutY="548.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="54" />
+            <Button layoutX="358.0" layoutY="485.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="55" />
+            <Button layoutX="358.0" layoutY="422.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" text="56" />
+            <Button layoutX="105.0" layoutY="105.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="1" />
+            <Button layoutX="42.0" layoutY="105.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="1" />
+            <Button layoutX="42.0" layoutY="41.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="1" />
+            <Button layoutX="105.0" layoutY="41.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="1" />
+            <Button layoutX="674.0" layoutY="105.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="2" />
+            <Button layoutX="611.0" layoutY="105.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="2" />
+            <Button layoutX="611.0" layoutY="41.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="2" />
+            <Button layoutX="674.0" layoutY="41.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="2" />
+            <Button layoutX="674.0" layoutY="674.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="3" />
+            <Button layoutX="611.0" layoutY="674.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="3" />
+            <Button layoutX="611.0" layoutY="611.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="3" />
+            <Button layoutX="674.0" layoutY="611.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="3" />
+            <Button layoutX="105.0" layoutY="611.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="4" />
+            <Button layoutX="42.0" layoutY="611.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="4" />
+            <Button layoutX="42.0" layoutY="674.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="4" />
+            <Button layoutX="105.0" layoutY="674.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0" text="4" />
+            <Label fx:id="player2Label" alignment="TOP_LEFT" layoutX="594.0" layoutY="155.0" prefHeight="70.0" prefWidth="135.0" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font></Label>
+            <Label fx:id="player3Label" alignment="TOP_LEFT" layoutX="594.0" layoutY="532.0" prefHeight="70.0" prefWidth="135.0" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font></Label>
+            <Label fx:id="player4Label" alignment="TOP_LEFT" layoutX="34.0" layoutY="532.0" prefHeight="70.0" prefWidth="135.0" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font></Label>
+            <Label fx:id="player1Label" alignment="TOP_LEFT" layoutX="45.0" layoutY="155.0" prefHeight="70.0" prefWidth="135.0" text="Player1" wrapText="true">
+               <font>
+                  <Font name="Berlin Sans FB" size="17.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="minButton" layoutX="706.0" mnemonicParsing="false" onMouseClicked="#minButtonClick" prefHeight="28.0" prefWidth="28.0" text="_" textFill="WHITE" />
+      <Button fx:id="closeButton" layoutX="734.0" mnemonicParsing="false" onMouseClicked="#closeButtonClick" prefHeight="28.0" prefWidth="28.0" text="X" textFill="WHITE" />
+      <Label prefHeight="28.0" prefWidth="518.0" text="Man, Don't Get Angry" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="skipButton" layoutX="568.0" maxHeight="28.0" minHeight="28.0" mnemonicParsing="false" onMouseClicked="#skipButtonClick" prefHeight="28.0" text="SKIP MOVE" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="restartButton" layoutX="493.0" maxHeight="28.0" minHeight="28.0" mnemonicParsing="false" onMouseClicked="#restartButtonClick" prefHeight="28.0" text="RESTART" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="rerollButton" layoutX="424.0" maxHeight="28.0" minHeight="28.0" mnemonicParsing="false" onMouseClicked="#rerollButtonClick" prefHeight="28.0" text="REROLL" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

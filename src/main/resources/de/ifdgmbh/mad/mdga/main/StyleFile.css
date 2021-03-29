@@ -1,0 +1,33 @@
+#mypane{
+	-fx-background-color: #272727;
+}
+#minButton{
+	-fx-background-color: #272727;
+}
+#minButton:hover{
+	-fx-background-color: #4B4B4B;
+}
+#closeButton{
+	-fx-background-color: #272727;
+}
+#closeButton:hover{
+	-fx-background-color: #FF0000;
+}
+#skipButton{
+	-fx-background-color: #272727;
+}
+#skipButton:hover{
+	-fx-background-color: #4B4B4B;
+}
+#restartButton{
+	-fx-background-color: #272727;
+}
+#restartButton:hover{
+	-fx-background-color: #4B4B4B;
+}
+#rerollButton{
+	-fx-background-color: #272727;
+}
+#rerollButton:hover{
+	-fx-background-color: #4B4B4B;
+}
