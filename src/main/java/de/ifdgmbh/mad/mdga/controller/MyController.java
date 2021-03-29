@@ -60,7 +60,6 @@ public class MyController {
 	int rolls = 3;
 
 	public void initialize() {
-		rollButton.setText("GO");
 		int k = 0;
 		for (Node n : gamepane.getChildren()) {
 			if (k > 72)
@@ -70,8 +69,6 @@ public class MyController {
 					buttons[k] = (Button) n;
 					buttons[k].setText("");
 					buttons[k].setPadding(new Insets(0, 0, 0, 0));
-					// buttons[k].setBackground(new Background(new BackgroundFill(Color.TRANSPARENT,
-					// null, null)));
 					if (k > 0) {
 						buttons[k].setStyle("-fx-border-width: 1px;\r\n" + "	-fx-border-color: black;\r\n"
 								+ "	-fx-background-color: transparent;\r\n" + "	-fx-border-radius: 5em;");
@@ -89,7 +86,7 @@ public class MyController {
 								buttons[var].setStyle("-fx-border-width: 1px;\r\n" + "	-fx-border-color: black;\r\n"
 										+ "	-fx-background-color: transparent;\r\n" + "	-fx-border-radius: 5em;");
 								if (!active) {
-									popUp(false,false,"Start the game!");
+									popUp(false, false, "Start the game!");
 									return;
 								}
 								if (lastNumber == 0) {
@@ -128,12 +125,13 @@ public class MyController {
 									// moving to an end?
 									if (moveToFinal(var, lastNumber, getActivePlayer().getNumber())) {
 										if (getActivePlayer().getFinishNum() == 4) {
-											popUp(false, false, "EYO " + getActivePlayer().getName() + " is done!");
+											popUp(false, false, "Player " + getActivePlayer().getName()
+													+ " is done!\nYa'll better hurry up. :)");
 											getActivePlayer().setPlaying(false);
 											finished.add(getActivePlayer());
 											nextPlayer();
 											if (finished.size() == 4) {
-												popUp(true, false, "Test");
+												popUp(true, false, null);
 												active = false;
 											}
 										} else {
@@ -235,7 +233,7 @@ public class MyController {
 						pStorage[var][var2].setStyle("-fx-border-width: 1px;\r\n" + "	-fx-border-color: black;\r\n"
 								+ "	-fx-background-color: transparent;\r\n" + "	-fx-border-radius: 5em;");
 						if (!active) {
-							popUp(false,false,"Start the game!");
+							popUp(false, false, "Start the game!");
 							return;
 						}
 						// figures to move out?
@@ -291,6 +289,8 @@ public class MyController {
 			popUp(false, false, "No player!");
 		}
 		updateLabel();
+		rollButton.setStyle("-fx-font-size: 27px; -fx-font-family: 'Berlin Sans FB';");
+		rollButton.setText("GO");
 	}
 
 	/**
@@ -567,20 +567,22 @@ public class MyController {
 	 * switches the active player to the next player according to the player list
 	 */
 	public void nextPlayer() {
-		int temp = 0;
 		for (int k = 0; k < players.size(); k++) {
 			if (players.get(k).isActive()) {
 				players.get(k).setActive(false);
-				for (int i = 1; i <= players.size() - 1; i++) {
-					temp = k;
-					if (k + i >= players.size()) {
-						k = -1;
-					}
-					if (players.get(k + i).isPlaying() && !(players.get(k + i).isActive())) {
-						players.get(k + i).setActive(true);
+				for (int i = k + 1; i < players.size(); i++) {
+					if (players.get(i).isPlaying() && !(players.get(i).isActive())) {
+						players.get(i).setActive(true);
 						break;
 					}
-					k = temp;
+				}
+				if (getActivePlayer() == null) {
+					for (int i = 0; i <= k; i++) {
+						if (players.get(i).isPlaying() && !(players.get(i).isActive())) {
+							players.get(i).setActive(true);
+							break;
+						}
+					}
 				}
 
 				if (getActivePlayer().getStartNum() == 4) {
@@ -819,7 +821,8 @@ public class MyController {
 		rolls = 3;
 		players.clear();
 		finished.clear();
-		rollButton.setText("");
+		rollButton.setText("GO");
+		rollButton.setStyle("fx-font-size: 18px; -fx-font-family: 'Berlin Sans FB';");
 		popUp(false, true, "");
 		updateLabel();
 	}
@@ -840,7 +843,7 @@ public class MyController {
 		VBox vBox = new VBox();
 		if (win) {
 			popUp.setTitle("Game Over!");
-			label.setText("All players reached the goal!\nThank you for playing, have a nice day!");
+			label.setText("All players reached the goal!\nThank you for playing, have a nice day. :)");
 			vBox.getChildren().add(label);
 		} else if (input) {
 			popUp.setTitle("Enter Players!");

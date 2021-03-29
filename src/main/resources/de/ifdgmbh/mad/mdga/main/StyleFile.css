@@ -31,3 +31,13 @@
 #rerollButton:hover{
 	-fx-background-color: #4B4B4B;
 }
+#rollButton{
+	-fx-background-color: linear-gradient(#ff5400, #be1d00);
+	-fx-font-size: 27px; 
+	-fx-font-family: 'Berlin Sans FB';
+}
+#rollButton:hover{
+	-fx-background-color: linear-gradient(#FF7937, #C0422B);
+	-fx-font-size: 27px; 
+	-fx-font-family: 'Berlin Sans FB';
+}

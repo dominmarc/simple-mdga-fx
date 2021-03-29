@@ -16,9 +16,9 @@
                   <Image url="@../images/gamefield.png" />
                </image>
             </ImageView>
-            <Button fx:id="rollButton" alignment="CENTER" layoutX="355.0" layoutY="356.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#rollButtonClick" prefHeight="50.0" prefWidth="50.0" text="GO">
+            <Button fx:id="rollButton" alignment="CENTER" layoutX="355.0" layoutY="356.0" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#rollButtonClick" prefHeight="50.0" prefWidth="50.0">
                <font>
-                  <Font name="Berlin Sans FB" size="27.0" />
+                  <Font name="Berlin Sans FB" size="18.0" />
                </font>
             </Button>
             <Button layoutX="37.0" layoutY="290.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="54.0" text="1" />
